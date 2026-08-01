@@ -12,7 +12,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <ProductList />
-        <Footer />
+      
       </>
     ),
   },
