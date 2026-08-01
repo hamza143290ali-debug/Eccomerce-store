@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProductList from "./pages/ProductList";
-import Footer from "./components/Footer";
 import ProductDetail from "./pages/productDetail";
 import CartPage from "./pages/CartPage";
 import CheckOut from "./pages/CheckOut";
