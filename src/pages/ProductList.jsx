@@ -2,7 +2,7 @@ import React from "react";
 import SearchFilter from "../components/SearchFilter";
 import CategoryFilter from "../components/CategoryFilter";
 import { useCart } from "../context/CartContex";
-import ProductCart from "../components/ProductCart";
+import ProductCart from "../components/productCart";
 
 function ProductList() {
   const { products } = useCart();
