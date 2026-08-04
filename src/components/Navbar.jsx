@@ -26,7 +26,7 @@ function Navbar() {
           <div className="mr-4 bg-orange-500/40 p-1 rounded-md border-orange-900 border-1 relative">
             <ShoppingCart className=" text-orange-600 hover:text-orange-500 cursor-pointer transition-all duration-200" />
             {cartCount > 0 && (
-              <span className="absolute top=0 right-0 inline-flex items-center justify-center px-2 py-1 text-sm font-bold leading-none text-white transform translate-x-1/2 -translate-y/12 bg-red-600 rounded-full min-w-6">
+              <span className="absolute top=0 right-0 inline-flex items-center justify-center px-2 py-1 animate-bounce text-sm font-bold leading-none text-white transform translate-x-1/2 -translate-y/12 bg-red-600 rounded-full min-w-6">
                 {cartCount}
               </span>
             )}
