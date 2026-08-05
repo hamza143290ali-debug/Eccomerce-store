@@ -22,7 +22,7 @@ function CheckOut() {
       </p>
 
       <form
-        className="bg-gray-900 flex flex-col items-start px-8 rounded-xl mt-20 py-10 justify-evenly"
+        className=" shadow-2xl shadow-gray-700 flex flex-col items-start px-8 rounded-xl mt-20 py-10 justify-evenly"
         onSubmit={handleSubmit(formHandler)}
       >
         {/* shipping information with icon */}

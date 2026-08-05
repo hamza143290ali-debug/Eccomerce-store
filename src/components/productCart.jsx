@@ -6,7 +6,7 @@ import { useCart } from "../context/CartContex";
 function ProductCart({ product }) {
   const { addToCart } = useCart();
   return (
-    <div className="group bg-gray-900 rounded-2xl shadow-xl overflow-hidden flex flex-col h-full transition duration-500 border-2 border-gray-800 hover:shadow-orange-900/40">
+    <div className="group  rounded-2xl shadow-xl overflow-hidden flex flex-col h-full transition duration-500 border-2  hover:shadow-orange-900/40">
       <NavLink
         to={`/product/${product.id}`}
         className="relative cursor-pointer overflow-hidden"
@@ -24,7 +24,7 @@ function ProductCart({ product }) {
 
       <div className="p-5 flex flex-col grow">
         <NavLink to={`/product/${product.id}`}>
-          <h3 className="text-2xl font-extrabold text-white mb-2 cursor-pointer hover:text-orange-400 transition-all duration-200 line-clamp-1">
+          <h3 className="text-2xl font-extrabold text-gray-800 mb-2 cursor-pointer hover:text-orange-400 transition-all duration-200 line-clamp-1">
             {product.name}
           </h3>
         </NavLink>
@@ -34,7 +34,7 @@ function ProductCart({ product }) {
         </p>
 
         <div className="flex items-center text-xs text-gray-500 mb-4">
-          <span className="px-3 py-1 bg-gray-800 border border-gray-700 rounded-full font-semibold">
+          <span className="px-3 py-1 font-semibold">
             {product.category}
           </span>
         </div>

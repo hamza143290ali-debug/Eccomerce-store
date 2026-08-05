@@ -25,12 +25,12 @@ function CartPage() {
         </h2>
 
         {/* clear cart */}
-        <h2 className="text-xl p-2 font-extrabold text-white mb-10 tracking-tight cursor-pointer">
+        <h2 className="text-xl p-2 font-extrabold text-gray-900 mb-10 tracking-tight cursor-pointer">
           <button
             onClick={() => {
               clearCart();
             }}
-            className="bg-red-900 p-3 rounded-full hover:bg-orange-400/40 transition-all duration-300 cursor-pointer"
+            className="shadow-2xl shadow-gray-600  p-4 tracking-tighter rounded-full hover:bg-orange-400/40 transition-all duration-300 cursor-pointer"
           >
             Clear All
           </button>
@@ -43,24 +43,24 @@ function CartPage() {
             ))}
           </div>
 
-          <div className="lg:col-span-1 p-8 bg-gray-900 rounded-xl shadow-2xl border-1-4 sticky top-20 h-fit border border-gray-800">
-            <h3 class="text-3xl font-bold text-white mb-5 border-b border-gray-700 p-3 flex space-x-2 items-center">
+          <div className="lg:col-span-1 p-8  rounded-xl shadow-2xl sticky top-20 h-fit shadow-gray-600">
+            <h3 class="text-3xl font-bold text-gray-900/92 mb-5 border-b border-gray-700 p-3 flex space-x-2 items-center">
               <div className="flex justify-between">
                 <span className="w-6 h-6 text-orange-400">$</span>
                 <span>Order Total </span>
               </div>
             </h3>
 
-            <div className="space-y-4 text-gray-400">
+            <div className="space-y-4 text-gray-500">
               {/* subtotal */}
               <div className="flex justify-between text-xl">
-                <span className="font-semibold text-white">SubTotal:</span>
+                <span className="font-semibold text-gray-500">SubTotal:</span>
                 <span>${cartTotal.toFixed(2)}</span>
               </div>
 
               {/* shipping express */}
               <div className="flex justify-between text-xl">
-                <span className="font-semibold text-white">
+                <span className="font-semibold text-gray-500">
                   Shipping (Express):
                 </span>
                 <span className="text-gray-400">Free</span>
@@ -70,7 +70,7 @@ function CartPage() {
             {/* estemate total */}
 
             <div className="flex justify-between text-xl pt-6 border-t border-gray-700">
-              <span className=" text-white text-2xl font-extrabold">
+              <span className=" text-gray-500 text-2xl font-extrabold">
                 Estimated Total:
               </span>
               <span className="text-orange-400">${cartTotal.toFixed(2)}</span>
