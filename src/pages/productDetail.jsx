@@ -21,12 +21,12 @@ function ProductDetail() {
 
   return (
     <div
-      className="container mx-auto px-4 md:px-8 bg-gray-900 min-h-screen rounded-2xl shadow-2xl
-    my-8 p-6 md:p-12 border border-gray-800"
+      className="container mx-auto px-4 md:px-8 min-h-screen rounded-2xl shadow-2xl shadow-gray-500
+    my-8 p-6 md:p-12 "
     >
       <Link to="/">
         <button
-          className="cursor-pointer flex items-center text-gray-400 hover:text-orange-400 transition-all 
+          className="cursor-pointer flex items-center text-gray-600 hover:text-orange-400 transition-all 
         duration-150 mb-12 font-semi-bold text-lg"
         >
           <ChevronLeft className="w-6 h-6 mr-1" />
@@ -37,7 +37,7 @@ function ProductDetail() {
       <div className="grid grid-cols-1  md:grid-cols-2 gap-1">
         <div className="w-full">
           <img
-            className="w-100 h-100 obect-cover rounded-2xl shadow-2xl shadow-gray-950/50 border-4 border-gray-800"
+            className="w-100 h-100 obect-cover rounded-2xl shadow-2xl shadow-gray-950/50 transform hover:scale-105 transition-all duration-250"
             src={product.image}
             alt={product.name}
           />
@@ -46,7 +46,7 @@ function ProductDetail() {
         {/* div for text */}
         <div className="flex flex-col justify-between">
           {/* product name */}
-          <h1 className="text-4xl font-extrabold text-white mb-4 leading-tight tracking-tighter">
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-4 leading-tight tracking-tighter">
             {product.name}
           </h1>
           {/* product price */}
@@ -54,7 +54,7 @@ function ProductDetail() {
             ${product.price.toFixed(2)}
           </p>
 
-          <h2 className="text-xl font-bold text-gray-200 mb-2 border-b border-e-orange-900/50 pb-2 flex items-center space-x-2">
+          <h2 className="text-xl font-bold text-gray-400 mb-2 border-b border-e-orange-900/50 pb-2 flex items-center space-x-2">
             <Tag className="w-5 h-5 text-orange-500" />
             <span>Product Overview</span>
           </h2>
@@ -63,7 +63,7 @@ function ProductDetail() {
             {product.description}
           </p>
 
-          <ul className="space-y-3 text-gray-300 p-4 bg-gray-800 rounded-xl border border-gray-800 ">
+          <ul className="space-y-3 text-gray-500 p-4  rounded-xl shadow-2xl shadow-gray-500/50 mt-4">
             <li className="flex items-center space-x-3 text-lg ">
               <Zap className="w-5 h-5 text-orange-500" />
               <span>High-Quality, Professional Grade Material</span>
@@ -91,7 +91,7 @@ function ProductDetail() {
             </button>
 
             <Link to="/" className="w-full">
-              <button className="w-full border border-orange-500/90 py-2 font-bold text-xl rounded-full hover:bg-orange-500/40 transition-all duration-500">
+              <button className="w-full border text-gray-500 border-orange-500/90 py-2 font-bold text-xl rounded-full hover:bg-orange-500/40 transition-all duration-500 hover:text-white">
                 KEEP SHOPING
               </button>
             </Link>
